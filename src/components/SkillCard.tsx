@@ -26,11 +26,11 @@ export interface Skill {
 const useStyles = makeStyles({
   root: {
     maxWidth: 500,
-    // margin: 8,
     cursor: "default",
     "&:hover": {
       transform: "translate(-2px, -2px)",
     },
+    height: "100%",
   },
   action: {
     cursor: "default",
