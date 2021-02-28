@@ -30,6 +30,8 @@ interface HeaderProps {
 
 const StyledAtag = styled.a<{ selected: boolean }>`
   color: black;
+  font-size: 18px;
+
   ${(props) =>
     props.selected
       ? `

@@ -73,6 +73,20 @@ const mySkills: Skill[] = [
   },
 
   {
+    title: "Lerna",
+    src: "/images/skills/Lerna.png",
+    description: "Monorepo management",
+    skillArea: SkillArea.BUILD,
+  },
+
+  {
+    title: "NX",
+    src: "/images/skills/nx.png",
+    description: "Monorepo management",
+    skillArea: SkillArea.BUILD,
+  },
+
+  {
     title: "MySQL",
     src: "/images/skills/mysql.svg",
     description: "Relational databases",
@@ -88,8 +102,8 @@ const mySkills: Skill[] = [
 
   {
     title: "Node JS",
-    src: "/images/skills/nest.png",
-    description: "Creating scalable REST API's",
+    src: "/images/skills/node.png",
+    description: "Creating nestscalable REST API's",
     skillArea: SkillArea.BACKEND,
   },
 
@@ -131,6 +145,7 @@ const mySkills: Skill[] = [
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    margin: 8,
   },
   paper: {
     padding: theme.spacing(2),

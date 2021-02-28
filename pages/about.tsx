@@ -19,11 +19,13 @@ const useStyles = makeStyles(() => ({
   },
   imgWrapper: {
     float: "right",
-    marginLeft: 15,
-    marginRight: 15,
+    margin: 15,
   },
   text: {
     marginBottom: "1rem",
+  },
+  paper: {
+    borderRadius: 16,
   },
 }))
 
@@ -42,10 +44,10 @@ export default function Index() {
       <GlobalStyle />
       <Header />
       <Container maxWidth="md">
-        <Paper elevation={5}>
+        <Paper elevation={5} className={styles.paper}>
           <Container maxWidth="md">
             <Box my={2} p={4}>
-              <Typography variant="h2" component="h1" className={styles.text}>
+              <Typography variant="h2" component="h1">
                 About Me
               </Typography>
               <Divider className={styles.divider} />
@@ -74,15 +76,25 @@ export default function Index() {
                 component="p"
                 gutterBottom
               >
-                My name is Jack and I am a Senior Frontend Developer from
-                London. I currently work for CENTURY Tech, building an
-                insightful, beautiful and scalable education platform that has a
-                global reach. I have previously worked in the FinTech industry
-                and also always have a bunch of small projects on the go.
+                My name is Jack and I am a Web Developer and Technical
+                Consultant currently living in Basel, Switzerland.
               </Typography>
+
+              <Typography
+                className={styles.text}
+                variant="body1"
+                component="p"
+                gutterBottom
+              >
+                I have worked on a variety of projects and with a number of
+                clients to implement solutions on a wide range of concepts,
+                project sizes, time scales and budgets.
+              </Typography>
+
               <Typography variant="body1" component="p">
-                I really enjoy the Javascript ecosystem and community and love
-                getting involved in it. Some of my key interests right now are:
+                I really enjoy the web development ecosystem and community and
+                love getting involved in it. Some of my key interests right now
+                are:
               </Typography>
               <ul>
                 {keyInterests.map((interest, i) => (
@@ -96,7 +108,9 @@ export default function Index() {
 
               <Typography className={styles.text} variant="body1" component="p">
                 I enjoy going to and giving talks at web development meetups and
-                meeting people from across the Tech community.
+                meeting people from across the Tech community. So even if you
+                don't have a project but just want to discuss and idea or bounce
+                ideas of each other, please do not hesitate to reach out.
               </Typography>
             </Box>
           </Container>

@@ -8,6 +8,15 @@ const theme = createMuiTheme({
       main: red.A400,
     },
   },
+  typography: {
+    fontFamily: ["Roboto", "Helvetica", "Arial", "sans-serif"].join(","),
+    body1: {
+      fontSize: "1rem",
+      textAlign: "justify",
+      textJustify: "inter-word",
+      lineHeight: "1.5rem",
+    },
+  },
 })
 
 export default theme

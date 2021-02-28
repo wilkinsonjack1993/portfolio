@@ -103,7 +103,7 @@ export const Contact = (props: ContactProps) => {
               component="h5"
               gutterBottom
             >
-              +447825 625772
+              +41 78 212 96 69
             </Typography>
             <br />
             <Boop rotation={70} scale={1.2}>

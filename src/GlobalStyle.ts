@@ -10,7 +10,7 @@ body {
     content: "";
     background: url(${require(`../public/images/sea-beach.jpg`)});
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.35;
     top: 0;
     left: 0;
     display: inline-block;
